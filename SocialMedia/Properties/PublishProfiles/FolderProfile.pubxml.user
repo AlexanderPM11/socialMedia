@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2022-07-07T05:15:52.5723561Z;True|2022-07-07T01:14:40.8361480-04:00;True|2022-07-07T01:12:27.3582715-04:00;True|2022-07-07T01:10:35.1934226-04:00;True|2022-07-06T23:04:32.6264631-04:00;</History>
+  </PropertyGroup>
+</Project>

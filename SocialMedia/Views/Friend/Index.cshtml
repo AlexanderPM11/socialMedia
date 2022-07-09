@@ -1,0 +1,129 @@
+﻿@using SocialMedia.Core.Aplication.ViewModel.Friends
+@model List<FriendsViewModel>
+@{
+    ViewData["Title"] = "Amigos";
+}
+
+<div class="row mt-5">
+
+    <div class="Add_Friend_Btn">
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Agregar Amigos
+        </button>
+    </div>
+    
+    @if (ViewBag.FindFridn == "UserForAddNoFound")
+    {
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Amigo no agregado. Asegurese de que él usuario exista!!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    else if (ViewBag.FindFridn == "UserFound")
+    {
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            Amigo agregdo con exito!!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    else if (ViewBag.FindFridn == "userExist")
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Este usuario ya exite. Por tanto, no se agregó!!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    else if (ViewBag.FindFridn == "UserSame")
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            No se puede agregar usted mismo como amigo. Por tanto, no se agregó!!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (Model.Count == 0)
+    {
+        <div class="card-header bg-primary text-light">
+            <h4>Amigos no encontrado</h4>
+        </div>
+    }
+    else
+    { 
+<div class="cont_SerchFriend">
+
+
+    <form method="post" asp-action="Filtro" id="formul2" asp-controller="Friend">
+        <div class="mb-3">
+            <label for="filtrar" class="form-label"><b>Buscar Amigos:</b></label>
+            <div class="btn-group">
+
+                <input type="text" placeholder="Nombre de usuario" class="form-control" required name="UserFilter" id="filtrar" aria-describedby="emailHelp">
+                <button type="submit" class="btn btn-outline-primary">Buscar</button>
+            </div>
+        </div>
+            
+</form>
+</div>
+
+
+
+
+        <div class="card-header bg-primary text-light cont_List_Friend_Title">
+            <h4>Listados de amigos</h4>
+        </div>
+
+        @foreach (FriendsViewModel userVm in Model)
+        {
+                <div class="card shadow-sm">
+                    <div class="card-body contCard">
+                        <img class="bd-placeholder-img card-img-top img-product-size img_publicationHome" src="@userVm.ImageUrl" />
+                        <h4 class="card-title">@userVm.UserName </h4>
+                        <h4 class="card-title">@userVm.Name @userVm.Lastname</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-controller="Friend" asp-action="Delete" asp-route-id="@userVm.Id" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                                <a asp-controller="Friend" asp-action="PublicationFriend" asp-route-id="@userVm.Id_UserRelation" class="btn btn-sm btn-outline-info">Publicaciones</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        }
+
+    }
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="formul" asp-action="AddFriend" asp-controller="Friend">
+                        <div class="mb-3">
+                            <label for="filtrar" class="form-label">Comentario:</label>
+                            <textarea type="text" class="form-control" required name="AddFrind" id="filtrar" aria-describedby="emailHelp"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+

@@ -1,0 +1,403 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia\\WebApp.SocialMedia.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj",
+        "projectName": "SocialMedia.Core.Aplication",
+        "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj",
+        "packagesPath": "C:\\Users\\Alexander Polanco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexander Polanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj",
+        "projectName": "SocialMedia.Core.Domain",
+        "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\Alexander Polanco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexander Polanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Persistence\\SocialMedia.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Persistence\\SocialMedia.Infrastructure.Persistence.csproj",
+        "projectName": "SocialMedia.Infrastructure.Persistence",
+        "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Persistence\\SocialMedia.Infrastructure.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Alexander Polanco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexander Polanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj"
+              },
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
+        "projectName": "SocialMedia.Infrastructure.Shared",
+        "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
+        "packagesPath": "C:\\Users\\Alexander Polanco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexander Polanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj"
+              },
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia\\WebApp.SocialMedia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia\\WebApp.SocialMedia.csproj",
+        "projectName": "WebApp.SocialMedia",
+        "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia\\WebApp.SocialMedia.csproj",
+        "packagesPath": "C:\\Users\\Alexander Polanco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexander Polanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Aplication\\SocialMedia.Core.Aplication.csproj"
+              },
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Persistence\\SocialMedia.Infrastructure.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Persistence\\SocialMedia.Infrastructure.Persistence.csproj"
+              },
+              "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj": {
+                "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

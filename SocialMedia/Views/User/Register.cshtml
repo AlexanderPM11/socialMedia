@@ -1,0 +1,73 @@
+﻿@using SocialMedia.Core.Application.ViewModels.User;
+@model SaveUserViewModel
+@{    
+    ViewData["Title"] = "Registro";    
+}
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="card shadow-sm ">
+            <div class="card-body contCard">
+                <div class="card-header bg-primary text-light">
+                    <h4>Registro de usuario</h4>
+                </div>
+
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+            <form method="post" asp-controller="User" enctype="multipart/form-data" asp-action="Register">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Nombre: </label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Lastname" class="form-label">Apellido: </label>
+                    <input asp-for="Lastname" class="form-control" />
+                    <span asp-validation-for="Lastname" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Username" class="form-label">Nombre de usuario: </label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="File" class="form-label">Imagen: </label>
+                    <input asp-for="File" required class="form-control" />
+                    <span asp-validation-for="File" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Contraseña: </label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ConfirmPassword" class="form-label">Confirmar contraseña: </label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Tel" class="form-label">Telefono: </label>
+                    <input asp-for="Tel" class="form-control" />
+                    <span asp-validation-for="Tel" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Correo: </label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-outline-primary">Guardar</button>
+                    <a asp-controller="User" asp-action="Index" class="btn btn-outline-warning">Volver atras</a>
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </div>
+</div>

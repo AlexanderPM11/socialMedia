@@ -1,0 +1,154 @@
+﻿@using SocialMedia.Core.Application.ViewModels.Publication
+@using  SocialMedia.Core.Aplication.ViewModel.Comment
+@using SocialMedia.Core.Application.ViewModels.User;
+@model List<PublicationViewModel>
+@{
+    ViewData["Title"] = "Mis publicaciones";
+}
+
+<div class="row mt-5">
+    <div class="cont_BtbCreate">
+        <a asp-controller="Publication" asp-action="Create" class="btn btn-outline-primary">Crear publicacion</a>
+    </div>
+
+    @if (Model.Count == 0)
+    {
+        <div class="card-header bg-primary text-light">
+            <h4>No hay publicaciones disponibles</h4>
+        </div>
+    }
+    else
+    {
+        <div class="card-header bg-primary text-light">
+            <h4>Mis publicaciones</h4>
+        </div>
+        @foreach (PublicationViewModel userVm in Model)
+        {
+            <div class="card shadow-sm ">
+                <div class="card-body contCard">
+
+                    @if (ViewBag.User != null)
+                    {
+                        @foreach (UserViewModel user in ViewBag.User as List<UserViewModel>)
+                        {
+                            @if (userVm.Id_User == user.Id)
+                            {
+                                <div class="cont_Perfil">
+                                    <div class="contNamePerfil">
+                                        <h3>@user.Name (@user.Username)</h3>
+                                        <p class="p_DatePublication">@userVm.Created </p>
+
+                                    </div>
+
+                                    <div class="contImgPerfil">
+                                        <img class="bd-placeholder-img card-img-top img-product-size img_profile" src="@user.ImageUrl" />
+                                    </div>
+
+
+                                </div>
+                            }
+
+                        }
+
+                    }
+                    @if (userVm.TitlePost != null)
+                    {
+                        <h4 class="card-title">@userVm.TitlePost </h4>
+                    }
+
+                    @if (userVm.ImageUrl != null)
+                    {
+                        <img class="bd-placeholder-img card-img-top img-product-size img_publicationHome" src="@userVm.ImageUrl" />
+
+                    }
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a asp-controller="Publication" asp-action="Edit" asp-route-id="@userVm.Id" class="btn btn-sm btn-outline-info">Editar</a>
+                            <a asp-controller="Publication" asp-action="Delete" asp-route-id="@userVm.Id" class="btn btn-sm btn-outline-danger">Borrar</a>
+
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-@userVm.Id">
+                                Comentarios
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal-@userVm.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <div class="cont_Comment">
+                                @if (userVm.ImageUrl != null)
+                                {
+                                    <div class="contImgComment">
+                                        <img class="bd-placeholder-img card-img-top img-product-size img_ComentUsers" src="@userVm.ImageUrl" />
+                                    </div>
+                                }
+
+                                else if (userVm.TitlePost != null)
+                                {
+                                    <div class="modal-header">
+                                        <p><b>@userVm.TitlePost</b></p>
+                                    </div>
+                                }
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form method="post" id="formul" asp-action="Comment" asp-controller="Publication">
+                                <div class="mb-3">
+                                    <label for="filtrar" class="form-label">Introduzca el usuario:</label>
+                                    <textarea type="text" class="form-control" required name="comment" id="filtrar" aria-describedby="emailHelp"></textarea>
+                                </div>
+                                <input type="hidden" name="Id_Publication" value="@userVm.Id" />
+                                <button type="submit" class="btn btn-primary">Comentar</button>
+                            </form>
+                        </div>
+                        @if (ViewBag.Comment != null)
+                        {
+                            <div style=" height: 200px; overflow-y: scroll;">
+                                @foreach (CommentViewModel comment in ViewBag.Comment as List<CommentViewModel>)
+                                {
+                                    if (comment.Id_Publication == userVm.Id)
+                                    {
+                                        <div class="cont_Comment">
+                                            <div class="contImgComment">
+                                                <img class="bd-placeholder-img card-img-top img-product-size img_ComentUsers" src="@comment.ImageUrl" />
+                                            </div>
+                                            <div class="contTextComment">
+                                                <p>@comment.Commentary</p>
+                                            </div>
+                                        </div>
+                                    }
+
+
+                                }
+
+                            </div>
+                        }
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        }
+
+    }
+
+
+
+
+
+</div>
+

@@ -1,0 +1,39 @@
+﻿@using SocialMedia.Core.Aplication.ViewModel.Friends
+@model SaveFriendsViewModel
+@{
+    ViewData["Title"] = "Eliminar categoria";
+}
+
+<div class="row">
+
+    <div class="card shadow-sm ">
+        <div class="card-body contCard">
+            <div class="card-header bg-danger text-light">
+                <h4>¿Esta seguro que desea eliminar este amigo?</h4>
+            </div>
+            <div class="card-body">
+                @if (Model.Name != null)
+                {
+                    <h4 class="card-title">@Model.Name (@Model.UserName) </h4>
+                }
+                @if (Model.ImageUrl != null)
+                {
+                    <img class="bd-placeholder-img card-img-top img-product-size img_publicationHome" src="@Model.ImageUrl" />
+
+                }
+
+            <form method="post" asp-controller="Friend" asp-action="DeletePost">
+
+                <input type="hidden" asp-for="Id" />
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                    <a asp-controller="Friend" asp-action="Index" class="btn btn-outline-primary">Cancelar</a>
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

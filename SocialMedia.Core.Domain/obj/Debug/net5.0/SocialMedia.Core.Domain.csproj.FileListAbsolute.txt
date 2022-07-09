@@ -1,0 +1,12 @@
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\SocialMedia.Core.Domain.deps.json
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\ref\SocialMedia.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.AssemblyInfo.cs
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\ref\SocialMedia.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.csproj.AssemblyReference.cache

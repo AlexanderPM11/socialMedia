@@ -1,0 +1,47 @@
+﻿@using SocialMedia.Core.Aplication.ViewModel.Publication
+@model SavePublicaVm
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Guardar categoria";
+}
+
+<div class="container-fluid">
+
+    <div class="row">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-light">
+                    <h4>@(editMode ? $"Editando la publicación:" : "Creando una nueva publicación")</h4>
+                </div>
+                <div class="card-body contCard">
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+                    <form method="post" enctype="multipart/form-data" asp-controller="Publication" asp-action="@(editMode ? "Edit":"Create")">
+
+                        <div class="mb-3">
+                            <label asp-for="TitlePost" class="form-label">Titulo de la publication: </label>
+                            <textarea asp-for="TitlePost" class="form-control"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="File" class="form-label">Imagen: </label>
+                            @if (Model.ImageUrl != null)
+                            {
+                                <img class="bd-placeholder-img card-img-top img-product-size img_ComentUsers" src="@Model.ImageUrl" />
+                            }
+                            <input asp-for="File" class="form-control" />
+
+                        </div>
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <a asp-controller="Publication" asp-action="Index" class="btn btn-warning">Volver atras</a>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,16 @@
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Infrastructure.Persistence.deps.json
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\ref\SocialMedia.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Infrastructure.Persistence.pdb
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Core.Aplication.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Core.Domain.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Core.Aplication.pdb
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\bin\Release\net5.0\SocialMedia.Core.Domain.pdb
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\ref\SocialMedia.Infrastructure.Persistence.dll
+C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Release\net5.0\SocialMedia.Infrastructure.Persistence.pdb

@@ -1,0 +1,76 @@
+﻿@using  SocialMedia.Core.Aplication.ViewModel.User
+@model Login
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="row mt-5">
+    <div class="card shadow-sm ">
+        <div class="card-body contCard">
+            <div class="card-header bg-primary text-light">
+                <h4>Login de usuario</h4>
+            </div>
+            <div class="card-body contCard">
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                <form method="post" asp-controller="User" asp-action="Index">
+                    <div class="mb-3">
+                        <label asp-for="Username" class="form-label">Nombre de usuario</label>
+                        <input class="form-control" asp-for="Username">
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label">Contraseña</label>
+                        <input class="form-control" asp-for="Password">
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-outline-primary">Iniciar sección</button>
+                        <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Restablecer contraseña
+                        </button>
+                    </div>
+                    <a class="nav-link " asp-area="" asp-controller="User" asp-action="Register">Crear cuenta</a>
+
+                </form>
+
+            </div>
+        </div>
+
+        @if (ViewBag.chagePassword == "no")
+        {
+            <div class="alert alert-danger" role="alert">
+                Correo no encontrado. No se pudo cambiar contraseña de usuario!!
+            </div>
+        }
+        else if (ViewBag.chagePassword == "yes")
+        {
+            <div class="alert alert-primary" role="alert">
+                Contraseña cambiada con exito!! Revise su correo.
+            </div>
+        }
+
+
+
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="formul" asp-action="RestorePassword" asp-controller="User">
+                        <div class="mb-3">
+                            <label for="filtrar" class="form-label">Introduzca el correo para restablecer contraseña:</label>
+                            <input type="email" class="form-control" required name="emailRestore" id="filtrar" aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,38 @@
+﻿@using SocialMedia.Core.Aplication.ViewModel.Publication
+@model SavePublicaVm
+@{
+    ViewData["Title"] = "Eliminar publicaciones";
+    var m = Model;
+}
+
+<div class="row">
+
+    <div class="card shadow-sm ">
+        <div class="card-body contCard">
+            <div class="card-header bg-danger text-light">
+                <h4>¿Esta seguro que desea eliminar esta publicación? </h4>
+            </div>
+            <div class="card-body">
+                @if (Model.TitlePost != null)
+                 {
+                    <h4 class="card-title">@Model.TitlePost </h4>
+                 }
+                    @if (Model.ImageUrl != null)
+                    {
+                        <img class="bd-placeholder-img card-img-top img-product-size img_publicationHome" src="@Model.ImageUrl" />
+
+                    }
+                    <form method="post" asp-controller="Publication" asp-action="DeletePost">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="btn-group">
+                            <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                            <a asp-controller="Publication" asp-action="Index" class="btn btn-outline-primary">Cancelar</a>
+                        </div>
+                    </form>
+
+                </div>
+        </div>
+    </div>
+
+</div>
+
