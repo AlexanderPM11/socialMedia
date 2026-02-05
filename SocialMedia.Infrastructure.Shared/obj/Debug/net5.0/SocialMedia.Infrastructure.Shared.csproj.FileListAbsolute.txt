@@ -14,3 +14,21 @@ C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.S
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\ref\SocialMedia.Infrastructure.Shared.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Infrastructure.Shared.deps.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Infrastructure.Shared.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Infrastructure.Shared.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Core.Aplication.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\bin\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.AssemblyInfo.cs
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.sourcelink.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMe.0CD2E28F.Up2Date
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\refint\SocialMedia.Infrastructure.Shared.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\SocialMedia.Infrastructure.Shared.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Shared\obj\Debug\net5.0\ref\SocialMedia.Infrastructure.Shared.dll

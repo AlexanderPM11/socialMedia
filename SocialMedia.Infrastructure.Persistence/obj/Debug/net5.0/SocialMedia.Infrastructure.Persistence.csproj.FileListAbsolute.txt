@@ -14,3 +14,21 @@ C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.P
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\ref\SocialMedia.Infrastructure.Persistence.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Infrastructure.Persistence.deps.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Infrastructure.Persistence.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Core.Aplication.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\bin\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.sourcelink.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMe.5A9B1E81.Up2Date
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\refint\SocialMedia.Infrastructure.Persistence.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\SocialMedia.Infrastructure.Persistence.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Infrastructure.Persistence\obj\Debug\net5.0\ref\SocialMedia.Infrastructure.Persistence.dll

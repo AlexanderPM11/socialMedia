@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("c0bfbf9a-254c-4220-b0a2-58e924667375")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApp.SocialMedia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87644807cdbde09e4db25a18f0b0ac7f01bbf2b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApp.SocialMedia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApp.SocialMedia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

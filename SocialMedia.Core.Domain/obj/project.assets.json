@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alexander Polanco\\.nuget\\packages\\": {},
+    "C:\\Users\\Alexander\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj",
+      "projectUniqueName": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj",
       "projectName": "SocialMedia.Core.Domain",
-      "projectPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj",
-      "packagesPath": "C:\\Users\\Alexander Polanco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexander Polanco\\source\\repos\\SocialMedia\\SocialMedia.Core.Domain\\obj\\",
+      "projectPath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Core.Domain\\SocialMedia.Core.Domain.csproj",
+      "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Core.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alexander Polanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -45,7 +45,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net5.0": {
@@ -56,7 +62,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -65,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

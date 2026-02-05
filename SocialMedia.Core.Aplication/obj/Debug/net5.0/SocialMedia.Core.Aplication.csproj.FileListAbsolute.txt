@@ -12,3 +12,19 @@ C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Aplication\
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\ref\SocialMedia.Core.Aplication.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\bin\Debug\net5.0\SocialMedia.Core.Aplication.deps.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\bin\Debug\net5.0\SocialMedia.Core.Aplication.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\bin\Debug\net5.0\SocialMedia.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\bin\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\bin\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.AssemblyInfoInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.AssemblyInfo.cs
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.sourcelink.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMe.562DBB39.Up2Date
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\refint\SocialMedia.Core.Aplication.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\SocialMedia.Core.Aplication.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Aplication\obj\Debug\net5.0\ref\SocialMedia.Core.Aplication.dll

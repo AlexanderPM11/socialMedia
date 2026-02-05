@@ -1,0 +1,6 @@
+services:
+  webapp.socialmedia:
+    image: ${DOCKER_REGISTRY-}webappsocialmedia
+    build:
+      context: .
+      dockerfile: SocialMedia/Dockerfile

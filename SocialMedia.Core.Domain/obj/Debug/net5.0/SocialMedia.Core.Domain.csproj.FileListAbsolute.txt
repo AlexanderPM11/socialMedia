@@ -10,3 +10,16 @@ C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\ref\SocialMedia.Core.Domain.dll
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.pdb
 C:\Users\Alexander Polanco\source\repos\SocialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\SocialMedia.Core.Domain.deps.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\bin\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.csproj.AssemblyReference.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.AssemblyInfoInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.AssemblyInfo.cs
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.sourcelink.json
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\refint\SocialMedia.Core.Domain.dll
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\SocialMedia.Core.Domain.pdb
+C:\Projects\Personal\Programacion\socialMedia\SocialMedia.Core.Domain\obj\Debug\net5.0\ref\SocialMedia.Core.Domain.dll

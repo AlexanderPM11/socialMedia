@@ -21,7 +21,11 @@ namespace SocialMedia.Infrastructure.Persistence
     {
         public static void AddPersistenceInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+
             #region Contexts
+            var connectionString = Environment.GetEnvironmentVariable("DEFAULT_CONNECTION")
+                    ?? configuration.GetConnectionString("DefaultConnection");
+
             if (configuration.GetValue<bool>("UseInMemoryDatabase"))
             {
                 services.AddDbContext<ApplicationContext>(options => options.UseInMemoryDatabase("ApplicationDb"));
@@ -31,7 +35,7 @@ namespace SocialMedia.Infrastructure.Persistence
                 services.AddDbContext<ApplicationContext>(options =>
                 {
                     options.EnableSensitiveDataLogging();
-                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+                    options.UseSqlServer(connectionString,
                     m => m.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName));
                 });
             }
