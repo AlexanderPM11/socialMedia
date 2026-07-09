@@ -16,10 +16,10 @@ El sistema está estructurado en 5 capas desacopladas, lo que permite una alta m
 ```mermaid
 graph TD
     %% Estilos de Nodos
-    classDef domain fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef app fill:#bbf,stroke:#333,stroke-width:2px;
-    classDef infra fill:#fdb,stroke:#333,stroke-width:2px;
-    classDef presentation fill:#bfb,stroke:#333,stroke-width:2px;
+    classDef domain fill:#4f46e5,stroke:#312e81,stroke-width:2px,color:#fff;
+    classDef app fill:#0284c7,stroke:#0c4a6e,stroke-width:2px,color:#fff;
+    classDef infra fill:#64748b,stroke:#0f172a,stroke-width:2px,color:#fff;
+    classDef presentation fill:#059669,stroke:#064e3b,stroke-width:2px,color:#fff;
 
     %% Estructura
     Presentation[Capa de Presentación Web MVC<br/>SocialMedia] --> Application[Capa de Aplicación<br/>SocialMedia.Core.Aplication]
@@ -135,7 +135,38 @@ El repositorio incluye soporte nativo para contenedores, lo que facilita el leva
     ```bash
     docker-compose up --build
     ```
-2.  La aplicación estará disponible a través de los puertos expuestos definidos en el archivo `docker-compose.override.yml`.
+2.  La aplicación estará disponible a través de los puertos expuestos definidos en el archivo [docker-compose.yml](file:///c:/Projects/Personal/Programacion/socialMedia/docker-compose.yml).
+
+---
+
+## 🛸 Despliegue en Dokploy
+
+Puedes desplegar este proyecto de manera muy sencilla en **Dokploy** utilizando la configuración multicontenedor ya preparada en [docker-compose.yml](file:///c:/Projects/Personal/Programacion/socialMedia/docker-compose.yml).
+
+### Pasos para desplegar en Dokploy:
+
+1. **Crear un Servicio Compose**:
+   * En tu panel de Dokploy, ve a tu proyecto y selecciona **Create Service** > **Compose**.
+2. **Configurar el Repositorio**:
+   * Vincula tu repositorio de GitHub e indica la rama principal (`main` o `master`).
+   * Especifica la ruta del archivo Compose: `docker-compose.yml`.
+3. **Establecer las Variables de Entorno (Environment Variables)**:
+   Agrega las siguientes variables en la sección de Variables de Entorno de Dokploy para mantener tus credenciales protegidas:
+   
+   | Variable | Descripción | Valor de Ejemplo |
+   | :--- | :--- | :--- |
+   | `MSSQL_PASSWORD` | Contraseña fuerte de Administrador de SQL Server | `MiClaveSegura2026!` |
+   | `SMTP_EMAIL_FROM` | Correo remitente | `tu-correo@gmail.com` |
+   | `SMTP_HOST` | Host del servidor SMTP | `smtp.gmail.com` |
+   | `SMTP_PORT` | Puerto SMTP | `587` |
+   | `SMTP_USER` | Usuario SMTP | `tu-correo@gmail.com` |
+   | `SMTP_PASS` | Contraseña de aplicación del correo | `abcd efgh ijkl mnop` |
+   | `SMTP_DISPLAY_NAME` | Nombre a mostrar en el remitente | `RedSocial Soporte` |
+
+4. **Persistencia e Imágenes**:
+   * El archivo de configuración ya tiene definidos los volúmenes `mssql_data` (para que la base de datos de SQL Server no se borre al actualizar) y `web_images` (para guardar las fotos de perfil e imágenes publicadas por los usuarios).
+5. **Configurar Dominio / Puerto**:
+   * En la configuración del servicio en Dokploy, expón el puerto **`8080`** (que redirige al puerto interno 80 de la aplicación) y asígnale el dominio o subdominio deseado. Dokploy configurará automáticamente el certificado SSL (HTTPS) mediante Traefik.
 
 ---
 

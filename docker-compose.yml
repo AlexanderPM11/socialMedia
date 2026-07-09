@@ -1,6 +1,58 @@
+version: '3.8'
+
 services:
-  webapp.socialmedia:
-    image: ${DOCKER_REGISTRY-}webappsocialmedia
+  # ==========================================
+  # BASE DE DATOS: SQL SERVER
+  # ==========================================
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: socialmedia-db
+    restart: always
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_PASSWORD:-YourStrongPassword123!}
+    ports:
+      - "1433:1433" # Opcional: expone el puerto para conectarse externamente
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+  # ==========================================
+  # APLICACIÓN WEB: ASP.NET CORE MVC
+  # ==========================================
+  web:
+    image: socialmedia-webapp:latest
+    container_name: socialmedia-web
     build:
       context: .
-      dockerfile: SocialMedia/Dockerfile
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:80" # Redirecciona el puerto 8080 al puerto 80 del contenedor
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:80
+      
+      # Cadena de conexión usando el nombre del contenedor "db" como host
+      - DEFAULT_CONNECTION=Server=db;Database=RedSocial;User Id=sa;Password=${MSSQL_PASSWORD:-YourStrongPassword123!};TrustServerCertificate=True;MultipleActiveResultSets=true
+      
+      # Configuración del envío de correo SMTP
+      - MailSettings__EmailFrom=${SMTP_EMAIL_FROM:-alexanderrpolanco11@gmail.com}
+      - MailSettings__SmtpHost=${SMTP_HOST:-smtp.gmail.com}
+      - MailSettings__SmtpPort=${SMTP_PORT:-587}
+      - MailSettings__SmtpUser=${SMTP_USER:-alexanderrpolanco11@gmail.com}
+      - MailSettings__SmtpPass=${SMTP_PASS:-ptol lrlb ooys wlhu}
+      - MailSettings__DisplayName=${SMTP_DISPLAY_NAME:-RedSocial}
+    depends_on:
+      - db
+    volumes:
+      # Persistencia de imágenes cargadas por los usuarios (fotos de perfil y publicaciones)
+      - web_images:/app/wwwroot/Images
+
+# ==========================================
+# VOLÚMENES PERSISTENTES
+# ==========================================
+volumes:
+  mssql_data:
+    driver: local
+  web_images:
+    driver: local
