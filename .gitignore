@@ -114,6 +114,9 @@ docker-compose.override.yml
 # Secretos y Configuración Local
 # ------------------------------------------
 # Se ignoran archivos de configuración con credenciales locales o secretos
+.env
+.env.local
+.env.*.local
 appsettings.Local.json
 appsettings.local.json
 secrets.json
