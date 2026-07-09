@@ -1,88 +1,162 @@
-# Visual Studio
+# ==========================================
+# GITIGNORE PARA PROYECTO .NET (CLEAN ARCHITECTURE)
+# ==========================================
+
+# ------------------------------------------
+# Carpetas de Compilación y Salida (Build & Outputs)
+# ------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Aa]rtifacts/
+**/[Bb]in/
+**/[Oo]bj/
+**/[Oo]ut/
+**/[Aa]rtifacts/
+publish/
+[Pp]ublished/
+*.Publish.xml
+*.publishsettings
+
+# ------------------------------------------
+# Archivos y Carpetas de Visual Studio (IDE)
+# ------------------------------------------
 .vs/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+*.vssettings
+.vsconfig
+*.suo.tmp
+*.VC.db
+*.VC.opendb
+UpgradeLog.htm
+_UpgradeReport_Files/
 
-# Build directories
-[Bb]in/
-[Oo]bj/
-**/bin/
-**/obj/
-out/
-artifacts/
-
-# Visual Studio cache/options
+# ------------------------------------------
+# Archivos y Carpetas de Visual Studio Code (VSC)
+# ------------------------------------------
 .vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 *.code-workspace
+.history/
 
-# Rider
+# ------------------------------------------
+# Archivos y Carpetas de JetBrains Rider / IntelliJ
+# ------------------------------------------
 .idea/
 *.sln.iml
-
-# User-specific files
-*.vssettings
+*.idea.DotSettings.user
 *.DotSettings.user
 
-# NuGet
+# ------------------------------------------
+# Gestión de Dependencias (NuGet & Node)
+# ------------------------------------------
 *.nupkg
-packages/
+**/packages/
+!**/packages/repositories.config
 .nuget/packages/
 project.lock.json
 project.fragment.lock.json
+**/node_modules/
+**/package-lock.json
 
-# Dotnet
+# ------------------------------------------
+# Resultados de Compilación de .NET (Binarios)
+# ------------------------------------------
 *.dll
 *.exe
 *.pdb
 *.cache
+*.rsp
+*.suo
+*.pdb
+*.dll
+*.lib
+*.sbr
 
-# ASP.NET / web
-appsettings.Local.json
-secrets.json
-.secrets/
-IISExpress/.*
-applicationhost.config
-wwwroot/lib/
-
-# Entity Framework local DB
+# ------------------------------------------
+# Bases de Datos Locales y Archivos Temporales EF Core
+# ------------------------------------------
 *.mdf
 *.ldf
 *.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.localdb
+App_Data/
 
-# Logs
-*.log
-logs/
+# ------------------------------------------
+# Pruebas y Cobertura de Código (Testing)
+# ------------------------------------------
 TestResults/
-
-# Coverage
+**/TestResults/
 coverage/
 *.coverage
 *.coverage.xml
+*.gcov
+*.gcda
+*.gcno
 
-# Publish
-publish/
-*.Publish.xml
-
-# Azure
-*.publishsettings
-
-# Docker
+# ------------------------------------------
+# Docker y Contenedores
+# ------------------------------------------
+.dockerignore
 docker-compose.override.yml
 
-# Node
-node_modules/
+# ------------------------------------------
+# Secretos y Configuración Local
+# ------------------------------------------
+# Se ignoran archivos de configuración con credenciales locales o secretos
+appsettings.Local.json
+appsettings.local.json
+secrets.json
+.secrets/
+**/secrets.json
+**/appsettings.Local.json
 
-# OS generated
-.DS_Store
+# ------------------------------------------
+# Configuración del Servidor Web Express (IIS Express)
+# ------------------------------------------
+IISExpress/
+*.iisExpress-code-workspace
+applicationhost.config
+.iisexpress/
+
+# ------------------------------------------
+# Archivos del Sistema Operativo
+# ------------------------------------------
+# Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# JetBrains Rider
-.idea/
-*.sln.iml
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
-# Other
-.vsconfig
+# Linux
+*~
+.fuse_hidden*
+.directory
+.trash/
+.nfs*
 
-# End of file
+# Archivos de registro (Logs)
+*.log
+logs/
+**/logs/

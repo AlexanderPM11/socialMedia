@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B2M6vThdvbc=",
+  "dgSpecHash": "LHj2TKGrJlU=",
   "success": true,
   "projectFilePath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,30 @@
     "C:\\Users\\Alexander\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'MailKit' 3.3.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9j88-vvj5-vhgr",
+      "projectPath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
+      "libraryId": "MailKit",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'MimeKit' 3.3.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g7hc-96xr-gvvx",
+      "projectPath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Projects\\Personal\\Programacion\\socialMedia\\SocialMedia.Infrastructure.Shared\\SocialMedia.Infrastructure.Shared.csproj",
+      "libraryId": "MimeKit",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
     {
       "code": "NU1903",
       "level": "Warning",
